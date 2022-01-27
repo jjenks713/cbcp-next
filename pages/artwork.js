@@ -43,7 +43,7 @@ console.log(mainPhotos);
         </ul>
       </nav>
       <main className={styles.main}>
-      <div>
+{/*       <div>
       {mainPhotos.map(mainPhoto => (
             <div key={mainPhoto.id}>
               <Link href={"/"}>
@@ -58,7 +58,8 @@ console.log(mainPhotos);
             </div>
           ))}
 
-      </div>
+      </div> */}
+
       </main>
 
       <footer className={styles.footer}>

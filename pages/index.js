@@ -40,11 +40,18 @@ export default function Home({mainPhotos}) {
           </li>
         </ul>
       </nav>
-      <main>
-      <div>
+      <main className='flex flex-col justify-center items-center'>
+      <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
       {mainPhotos.map(mainPhoto => (
-            <div key={mainPhoto.id}>
+            <div className='hover:opacity-50 p-3 break-inside' key={mainPhoto.id}>
               <Link href={"/"}>
+              <img src={mainPhoto.url} alt="image"></img>
+              </Link>
+
+
+
+
+{/*               <Link href={"/"}>
               <Image src={mainPhoto.url} alt="image" width={200} height={200}></Image>
               </Link>
               <ul>
@@ -52,13 +59,12 @@ export default function Home({mainPhotos}) {
                 <li>Medium: {mainPhoto.med}</li>
                 <li>Size: {mainPhoto.size}</li>
                 <li>Edition: {mainPhoto.ed}</li>
-              </ul>
+              </ul> */}
             </div>
           ))}
 
       </div>
       </main>
-
       <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -71,6 +77,8 @@ export default function Home({mainPhotos}) {
           </span>
         </a>
       </footer>
+
+      
     </div>
   )
 }
