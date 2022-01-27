@@ -1,4 +1,4 @@
-import { drawingsData } from "../drawings-data"
+import { drawingsData } from "../../components/drawings-data"
 import Head from "next/head"
 import Link from 'next/link'
 import Image from 'next/image'
@@ -19,7 +19,6 @@ export async function getStaticProps() {
 
 export default function Drawings({drawingsPhotos}) {
 
-console.log(drawingsPhotos);
 
   return (
     <>

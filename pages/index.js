@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { mainData }  from './main-data';
+import { mainData }  from '../components/main-data';
 import Layout from '../components/Layouts'
 
 export async function getStaticProps() {
