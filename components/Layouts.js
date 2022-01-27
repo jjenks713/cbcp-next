@@ -51,18 +51,20 @@ export default function Layout({ fixed }) {
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Books</span>
+                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Artist Books</span>
                 </a>
               </Link>
 
               </li>
               <li className="nav-item">
+              <Link href="/Commissions">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Pin</span>
+                  <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Commisions</span>
                 </a>
+                </Link>
               </li>
             </ul>
           </div>
