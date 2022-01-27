@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { mainData }  from '../components/main-data';
 import Navigator from '../components/navigator';
-import Layout from '../components/layouts';
+//import Layout from '../components/layouts';
 
 export async function getStaticProps() {
 
