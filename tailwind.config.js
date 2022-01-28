@@ -4,7 +4,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Nanum: ["Nanum Gothic", "sans-serif"],
+      },
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

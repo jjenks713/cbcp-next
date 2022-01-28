@@ -37,8 +37,15 @@ export default function Drawings({carouselonePhotos, carouseltwoPhotos, carousel
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigator></Navigator>
+      <div className="grid justify-center px-3 py-10 font-Nanum">
+        <h1 className="uppercase font-bold leading-snug text-black"
+        style={{
+          fontSize: '50px'
+        }}
+        >Artist Books</h1>
 
-      <main className='flex flex-col justify-center items-center'>
+      </div>
+      <main className='flex flex-col justify-center items-center font-Nanum'>
       <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
       {carouselonePhotos.map(carouselonePhoto => (
             <div className='hover:opacity-50 p-3 break-inside' key={carouselonePhoto.id}>
@@ -136,11 +143,7 @@ export default function Drawings({carouselonePhotos, carouseltwoPhotos, carousel
       </div>
       </main>
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a>
           Powered by{' '}
           <span>
             <Image src="/images/vercel.svg" alt="Vercel Logo" width={72} height={16} />

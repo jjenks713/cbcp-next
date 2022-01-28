@@ -28,11 +28,18 @@ export default function Drawings({commissionPhotos}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigator></Navigator>
+      <div className="grid justify-center px-3 py-10 font-Nanum">
+        <h1 className="uppercase font-bold leading-snug text-black"
+        style={{
+          fontSize: '50px'
+        }}
+        >Commissions</h1>
 
-      <main className='flex flex-col justify-center items-center'>
+      </div>
+      <main className='flex flex-col justify-center items-center font-Nanum'>
       <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
       {commissionPhotos.map(commissionPhoto => (
-            <div className='hover:opacity-50 p-3 break-inside' key={commissionPhoto.id}>
+            <div className='hover:opacity-50 p-3 break-inside drop-shadow-xl' key={commissionPhoto.id}>
               <Link href={"/"}>
               <img
               src={commissionPhoto.url} 

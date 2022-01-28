@@ -30,39 +30,42 @@ export default function Home({mainPhotos}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigator></Navigator>
-      <main className='flex flex-col justify-center items-center bg-black'>
+      <div className="grid justify-center px-3 py-10 font-Nanum">
+        <h1 className="uppercase font-bold leading-snug text-black"
+        style={{
+          fontSize: '50px'
+        }}
+        >Screen Prints</h1>
+
+      </div>
+      <main className='flex flex-col justify-center items-center bg-black font-Nanum'>
       <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
-      {mainPhotos.map(mainPhoto => (
-            <div className='hover:opacity-50 p-3 break-inside' key={mainPhoto.id}>
-              <Link href={"/"}>
-              <img
-              src={mainPhoto.url} 
-              alt="image"
-              ></img>
-              </Link>
+        {mainPhotos.map(mainPhoto => (
+              <div className='hover:opacity-50 p-3 break-inside drop-shadow-xl' key={mainPhoto.id}>
+                <a href={"/"}>
+                <img // eslint-disable-line
+                src={mainPhoto.url} 
+                alt="image"
+                />
+                </a>
 
-
-
-
-{/*               <Link href={"/"}>
-              <Image src={mainPhoto.url} alt="image" width={200} height={200}></Image>
-              </Link>
-              <ul>
-                <li>Name: {mainPhoto.name}</li>
-                <li>Medium: {mainPhoto.med}</li>
-                <li>Size: {mainPhoto.size}</li>
-                <li>Edition: {mainPhoto.ed}</li>
-              </ul> */}
-            </div>
-          ))}
+              {/*<Link href={"/"}>
+                <Image src={mainPhoto.url} alt="image" width={200} height={200}></Image>
+                </Link>
+                <ul>
+                  <li>Name: {mainPhoto.name}</li>
+                  <li>Medium: {mainPhoto.med}</li>
+                  <li>Size: {mainPhoto.size}</li>
+                  <li>Edition: {mainPhoto.ed}</li>
+                </ul> */}
+              </div>
+            ))}
 
       </div>
       </main>
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
         >
           Powered by{' '}
           <span>

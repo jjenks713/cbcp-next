@@ -58,11 +58,7 @@ export default function Drawings({drawingsPhotos}) {
       </div>
       </main>
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a>
           Powered by{' '}
           <span>
             <Image src="/images/vercel.svg" alt="Vercel Logo" width={72} height={16} />

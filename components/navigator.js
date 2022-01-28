@@ -5,6 +5,9 @@ import { Menu } from '@headlessui/react'
 
 export default function Navigator() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+
+
+
   return (
     <>
     <Head>
@@ -13,7 +16,8 @@ export default function Navigator() {
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-zinc mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-center">
           <div className="w-full relative flex flex-wrap justify-center lg:w-auto lg:static lg:block lg:justify-start">
-            <Link href="/"> 
+            <Link href="/"//eslint-disable-line
+            > 
             <img //eslint-disable-line
               src="./images/CBCP-Long.png" 
               className="hover:opacity-75 cursor-pointer"
@@ -39,7 +43,7 @@ export default function Navigator() {
 
             <li className="nav-item">
             <Menu>
-              <Menu.Button className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75 bg-gray-900">Prints <i className="fa fa-angle-down"></i></Menu.Button>
+              <Menu.Button className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75 bg-gray-900">Prints&nbsp;&nbsp;<i className="fa fa-angle-down"></i></Menu.Button>
               <Menu.Items>
 
 
@@ -49,6 +53,9 @@ export default function Navigator() {
                       className={`${active && 'bg-blue-500'}`}
                       as={Link}
                       href="/"
+                      style={{
+                        fontSize: '13px'
+                      }}
                     >
                       Prints
                     </a>
@@ -63,6 +70,9 @@ export default function Navigator() {
                       className={`${active && 'bg-blue-500'}`}
                       as={Link}
                       href="/books"
+                      style={{
+                        fontSize: '13px'
+                      }}
                     >
                       Artist Books
                     </a>
@@ -78,7 +88,7 @@ export default function Navigator() {
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
                   
                 >
-                  Drawings +
+                  Drawings &nbsp;<i className="fa fa-plus" style={{fontSize: '10px'}}></i>
                 </a></Link>
 
               </li>
@@ -97,7 +107,6 @@ export default function Navigator() {
                 <a // eslint-disable-line
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="https://www.etsy.com/shop/creepybutcutepress"
-                  target="_blank"
                 >
                   Shop
                 </a>
