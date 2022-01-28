@@ -34,17 +34,13 @@ export async function getStaticProps() {
   }
 }
 
-
 export default function Home({mainPhotos}) {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false);
   const [modalPhotos, setModalData] = useState('');
-
-  console.log(modalPhotos);
-
-
+  console.log(modalPhotos[5])
 
   return (
     <>
@@ -60,7 +56,7 @@ export default function Home({mainPhotos}) {
       <div className="grid justify-center px-3 py-10 font-Nanum">
         <h1 className="uppercase font-bold leading-snug text-black"
         style={{
-          fontSize: '50px'
+          fontSize: '40px'
         }}
         >Screen Prints</h1>
 
@@ -71,7 +67,7 @@ export default function Home({mainPhotos}) {
               <div className='hover:opacity-50 p-3 break-inside drop-shadow-xl' key={mainPhoto.id}>
                 <a onClick={() => {
                   handleOpen();
-                  setModalData([mainPhoto.ed, mainPhoto.med, mainPhoto.name, mainPhoto.size, mainPhoto.url])
+                  setModalData([mainPhoto.ed, mainPhoto.med, mainPhoto.name, mainPhoto.size, mainPhoto.url, mainPhoto.val])
                 }}>
                 <img // eslint-disable-line
                 src={mainPhoto.url} 
@@ -83,7 +79,7 @@ export default function Home({mainPhotos}) {
                     onClose={handleClose}
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
-                    key={mainPhoto.id}
+                    key={mainPhoto[5]}
                   >
                     <Box sx={style} key={modalPhotos}>
                     <a>
@@ -94,10 +90,10 @@ export default function Home({mainPhotos}) {
                       </a>
                       <Typography id="modal-modal-title" variant="h6" component="h2">
                         <ul>
-                          <li>Name: {modalPhotos[2]}</li>
-                          <li>Medium: {modalPhotos[1]}</li>
-                          <li>Size: {modalPhotos[3]}</li>
-                          <li>Edition: {modalPhotos[0]}</li>
+                          <li key={modalPhotos[2]}>Name: {modalPhotos[2]}</li>
+                          <li key={modalPhotos[1]}>Medium: {modalPhotos[1]}</li>
+                          <li key={modalPhotos[3]}>Size: {modalPhotos[3]}</li>
+                          <li key={modalPhotos[0]}>Edition: {modalPhotos[0]}</li>
                         </ul>                      
                       </Typography>
                     </Box>

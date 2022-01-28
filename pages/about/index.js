@@ -12,7 +12,7 @@ export default function About() {
       <div className="grid justify-center px-3 py-10 font-Nanum">
         <h1 className="uppercase font-bold leading-snug text-black"
         style={{
-          fontSize: '50px'
+          fontSize: '40px'
         }}
         >About</h1>
 
