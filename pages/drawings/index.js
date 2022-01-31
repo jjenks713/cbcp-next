@@ -40,7 +40,15 @@ export default function Drawings({drawingsPhotos}) {
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false);
   const [modalPhotos, setModalData] = useState('');
-  console.log(modalPhotos[5])
+  console.log(modalPhotos)
+  var size = ""
+
+  if (modalPhotos[2]) {
+    size = modalPhotos[2]
+  } else {
+    size = "N/A";
+  }
+
 
   return (
     <>
@@ -99,7 +107,7 @@ export default function Drawings({drawingsPhotos}) {
                         <ul>
                           <li key={modalPhotos[1]}>Name: {modalPhotos[1]}</li>
                           <li key={modalPhotos[0]}>Medium: {modalPhotos[0]}</li>
-                          <li key={modalPhotos[2]}>Size: {modalPhotos[2]}</li>
+                          <li key={modalPhotos[2]}>Size: {size}</li>
                         </ul>                      
                       </Typography>
                     </Box>

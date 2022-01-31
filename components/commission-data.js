@@ -107,7 +107,7 @@ export const commissionData = [
         {
             url: '/images/Yue.jpg',
             name: 'Yue',
-            med: '',
+            med: 'Acrylic Painting',
             size: '',
             val: "17"
         },

@@ -93,7 +93,7 @@ export const drawingsData = [
     {
         url: '/images/Yue.jpg',
         name: 'Yue',
-        med: '',
+        med: 'Acrylic Painting',
         size: '',
         val: "15"
     },
@@ -115,14 +115,14 @@ export const drawingsData = [
         url: '/images/girl-2.jpg',
         name: 'Girl 2',
         med: 'Charcoal on Gray Paper',
-        size: '',
+        size: '9”x11”',
         val: "18"
     },
     {
         url: '/images/girl-3.jpg',
         name: 'Girl 3',
         med: 'Charcoal on Gray Paper',
-        size: '',
+        size: '9”x11”',
         val: "19"
     },
     {

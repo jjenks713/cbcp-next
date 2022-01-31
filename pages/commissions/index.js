@@ -41,8 +41,14 @@ export default function Drawings({commissionPhotos}) {
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false);
   const [modalPhotos, setModalData] = useState('');
-  console.log(modalPhotos[5])
+  console.log(modalPhotos)
+  var size = '';
 
+  if (modalPhotos[3]) {
+    size = modalPhotos[3]
+  } else {
+    size = "N/A";
+  }
 
   return (
     <>
@@ -83,6 +89,7 @@ export default function Drawings({commissionPhotos}) {
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                     key={modalPhotos[5]}
+                    className="sm:bg-none"
                   >
                     <Box sx={style} key={modalPhotos}>
                     <button className='absolute right-0 top-0 pr-5 pt-2' onClick={handleClose}><i className="fa fa-window-close" style={{fontSize: '25px'}}></i></button>
@@ -97,8 +104,7 @@ export default function Drawings({commissionPhotos}) {
                         <ul>
                           <li key={modalPhotos[2]}>Name: {modalPhotos[2]}</li>
                           <li key={modalPhotos[1]}>Medium: {modalPhotos[1]}</li>
-                          <li key={modalPhotos[3]}>Size: {modalPhotos[3]}</li>
-                          <li key={modalPhotos[0]}>Edition: {modalPhotos[0]}</li>
+                          <li key={modalPhotos[3]}>Size: {size}</li>
                         </ul>                      
                       </Typography>
                     </Box>
