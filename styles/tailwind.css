@@ -28,8 +28,8 @@
 
     }
 }
-@media only screen and (max-width: 600px) {
-    .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+@media only screen and (max-width: 500px) {
+    .css-919eu4 {
         background-color: transparent!important;
     }
 }
