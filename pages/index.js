@@ -52,7 +52,6 @@ export default function Home({mainPhotos}) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
       </Head>
-      <Navigator></Navigator>
 
       {/* <CircularProgress></CircularProgress> */}
       <div className="grid justify-center px-3 py-10 font-Nanum">

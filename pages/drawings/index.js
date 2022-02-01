@@ -59,7 +59,6 @@ export default function Drawings({drawingsPhotos}) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
       </Head>
-      <Navigator></Navigator>
 
       <div className="grid justify-center px-3 py-10 font-Nanum">
         <h1 className="uppercase font-bold leading-snug text-black"
