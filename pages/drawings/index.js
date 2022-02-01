@@ -41,7 +41,7 @@ export default function Drawings({drawingsPhotos}) {
   const handleClose = () => setOpen(false);
   const [modalPhotos, setModalData] = useState('');
   console.log(modalPhotos)
-  var size = ""
+  let size = ""
 
   if (modalPhotos[2]) {
     size = modalPhotos[2]

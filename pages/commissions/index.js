@@ -42,7 +42,7 @@ export default function Drawings({commissionPhotos}) {
   const handleClose = () => setOpen(false);
   const [modalPhotos, setModalData] = useState('');
   console.log(modalPhotos)
-  var size = '';
+  let size = '';
 
   if (modalPhotos[3]) {
     size = modalPhotos[3]

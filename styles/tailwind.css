@@ -28,6 +28,7 @@
 
     }
 }
+
 /* prod */
 @media only screen and (max-width: 500px) {
     .css-919eu4 {
@@ -37,6 +38,18 @@
 /* dev */
 @media only screen and (max-width: 500px) {
     .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
-        background-color: rgba(37, 36, 36, 0.075)!important;
+        background-color: transparent!important;
     }
 }
+
+/* .modal-box {
+    position: 'absolute';
+    top: '50%';
+    left: '50%';
+    transform: 'translate(-50%, -50%)';
+    width: '400';
+    background-color: 'background.paper';
+    border: '2px solid #000';
+    box-shadow: 24;
+    padding: 4;
+} */
