@@ -20,7 +20,7 @@ export default function Navigator() {
             className="text-white"
             > 
             <img //eslint-disable-line
-              src="images/CBCP-Long-1.png" 
+              src="/images/CBCP-Long-1.png" 
               alt="CREEPY BUT CUTE PRESS"
               className="hover:opacity-75 cursor-pointer text-white"
             >
