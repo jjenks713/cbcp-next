@@ -19,7 +19,8 @@ export default function Navigator() {
             <Link href="/"//eslint-disable-line
             > 
             <img //eslint-disable-line
-              src="./images/CBCP-Long-1.png" 
+              src="/images/CBCP-Long-1.png" 
+              alt="CREEPY BUT CUTE PRESS"
               className="hover:opacity-75 cursor-pointer"
             >
             </img>
