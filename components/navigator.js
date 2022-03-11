@@ -2,6 +2,7 @@ import React from "react";
 import Head from 'next/head'
 import NextLink from 'next/link'
 import { Menu } from '@headlessui/react'
+import Image from 'next/image'
 
 export default function Navigator() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -18,12 +19,13 @@ export default function Navigator() {
           <div className="w-full relative flex flex-wrap justify-center lg:w-auto lg:static lg:block lg:justify-start">
             <NextLink href="/"//eslint-disable-line            
             > 
-            <img //eslint-disable-line
-              src="../images/CBCP-Long-1.png" 
+            <Image //eslint-disable-line
+              width={1600}
+              height={200}
+              src="/images/CBCP-Long-1.png" 
               alt="CREEPY BUT CUTE PRESS"
               className="hover:opacity-75 cursor-pointer text-white"
-            >
-            </img>
+            />
             </NextLink>
 
             <button
@@ -36,11 +38,11 @@ export default function Navigator() {
           </div>
           <div
             className={
-              "lg:flex items-center flex-wrap" +
+              "lg:flex items-center flex-wrap text-center" +
               (navbarOpen ? " flex" : " hidden")
             }
           >
-            <ul className="flex flex-wrap list-none lg:ml-auto py-3 md:text-sm">
+            <ul className="flex flex-wrap list-none lg:ml-auto py-3 md:text-sm text-center">
 
             <li className="nav-item">
             <Menu>
@@ -52,7 +54,7 @@ export default function Navigator() {
                   {({ active }) => (
                     <a // eslint-disable-line
                       className={`${active && 'bg-blue-500'}`}
-                      as={Link}
+                      as={NextLink}
                       href="/"
                       style={{
                         fontSize: '13px'
@@ -69,7 +71,7 @@ export default function Navigator() {
                   {({ active }) => (
                     <a // eslint-disable-line
                       className={`${active && 'bg-blue-500'}`}
-                      as={Link}
+                      as={NextLink}
                       href="/books"
                       style={{
                         fontSize: '13px'
