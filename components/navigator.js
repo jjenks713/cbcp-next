@@ -1,6 +1,6 @@
 import React from "react";
 import Head from 'next/head'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import { Menu } from '@headlessui/react'
 
 export default function Navigator() {
@@ -16,16 +16,15 @@ export default function Navigator() {
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-black mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-center">
           <div className="w-full relative flex flex-wrap justify-center lg:w-auto lg:static lg:block lg:justify-start">
-            <Link href="/"//eslint-disable-line
-            className="text-white"
+            <NextLink href="/"//eslint-disable-line            
             > 
             <img //eslint-disable-line
-              src="/images/CBCP-Long-1.png" 
+              src="../images/CBCP-Long-1.png" 
               alt="CREEPY BUT CUTE PRESS"
               className="hover:opacity-75 cursor-pointer text-white"
             >
             </img>
-            </Link>
+            </NextLink>
 
             <button
               className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -85,24 +84,24 @@ export default function Navigator() {
             </li>
 
               <li className="nav-item">
-                <Link href='/drawings'>
+                <NextLink href='/drawings'>
                   <a
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                   
                 >
                   Drawings &nbsp;<i className="fa fa-plus" style={{fontSize: '10px'}}></i>
-                </a></Link>
+                </a></NextLink>
 
               </li>
 
               <li className="nav-item">
-              <Link href="/commissions">
+              <NextLink href="/commissions">
                 <a
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                 >
                   Commissions
                 </a>
-                </Link>
+                </NextLink>
               </li>
               
               <li className="nav-item">
@@ -115,23 +114,23 @@ export default function Navigator() {
               </li>
               
               <li className="nav-item">
-              <Link href="/about">
+              <NextLink href="/about">
                 <a
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                 >
                   About
                 </a>
-                </Link>
+                </NextLink>
               </li>
               
               <li className="nav-item">
-              <Link href="/contact">
+              <NextLink href="/contact">
                 <a
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                 >
                   Contact
                 </a>
-                </Link>
+                </NextLink>
               </li>
             </ul>
           </div>
