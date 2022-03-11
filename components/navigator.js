@@ -33,7 +33,7 @@ export default function Navigator() {
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <i className="fa fa-angle-down"></i>
+              {navbarOpen ? <i className="fa fa-angle-up"></i> : <i className="fa fa-angle-down"></i> }
             </button>
           </div>
           <div
@@ -54,6 +54,7 @@ export default function Navigator() {
                   {({ active }) => (
                     <a // eslint-disable-line
                       className={`${active && 'bg-blue-500'}`}
+  
                       as={NextLink}
                       href="/"
                       style={{
@@ -71,6 +72,7 @@ export default function Navigator() {
                   {({ active }) => (
                     <a // eslint-disable-line
                       className={`${active && 'bg-blue-500'}`}
+  
                       as={NextLink}
                       href="/books"
                       style={{
@@ -89,7 +91,6 @@ export default function Navigator() {
                 <NextLink href='/drawings'>
                   <a
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
-                  
                 >
                   Drawings &nbsp;<i className="fa fa-plus" style={{fontSize: '10px'}}></i>
                 </a></NextLink>
