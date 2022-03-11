@@ -111,6 +111,7 @@ export default function Navigator() {
                 <a // eslint-disable-line
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                   href="https://www.etsy.com/shop/creepybutcutepress"
+                  target="_blank"
                 >
                   Shop
                 </a>
