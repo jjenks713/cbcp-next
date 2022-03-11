@@ -72,7 +72,7 @@ export default function Home({mainPhotos}) {
             style={{
               fontSize: '40px'
             }}
-            >Screen Prints</h1>
+            >Prints</h1>
     
           </div>
             <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
