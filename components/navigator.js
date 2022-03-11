@@ -13,13 +13,13 @@ export default function Navigator() {
     <Head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </Head>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-zinc mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-black mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-center">
           <div className="w-full relative flex flex-wrap justify-center lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/"//eslint-disable-line
             > 
             <img //eslint-disable-line
-              src="./images/CBCP-Long.png" 
+              src="./images/CBCP-Long-1.png" 
               className="hover:opacity-75 cursor-pointer"
             >
             </img>
@@ -43,11 +43,11 @@ export default function Navigator() {
 
             <li className="nav-item">
             <Menu>
-              <Menu.Button className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75 bg-gray-900">Prints&nbsp;&nbsp;<i className="fa fa-angle-down"></i></Menu.Button>
+              <Menu.Button className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75 bg-gray-900">Prints&nbsp;&nbsp;<i className="fa fa-angle-down"></i></Menu.Button>
               <Menu.Items>
 
 
-                <Menu.Item className="px-3 py-2 flex items-center uppercase leading-snug text-white hover:opacity-75 bg-gray-900">
+                <Menu.Item className="px-3 py-2 flex items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
                   {({ active }) => (
                     <a // eslint-disable-line
                       className={`${active && 'bg-blue-500'}`}
@@ -64,7 +64,7 @@ export default function Navigator() {
                   )}
                 </Menu.Item>
 
-                <Menu.Item className="px-3 py-2 flex items-center uppercase leading-snug text-white hover:opacity-75 bg-gray-900">
+                <Menu.Item className="px-3 py-2 flex items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
                   {({ active }) => (
                     <a // eslint-disable-line
                       className={`${active && 'bg-blue-500'}`}
@@ -85,7 +85,7 @@ export default function Navigator() {
               <li className="nav-item">
                 <Link href='/drawings'>
                   <a
-                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                   
                 >
                   Drawings &nbsp;<i className="fa fa-plus" style={{fontSize: '10px'}}></i>
@@ -96,7 +96,7 @@ export default function Navigator() {
               <li className="nav-item">
               <Link href="/commissions">
                 <a
-                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                 >
                   Commissions
                 </a>
@@ -105,7 +105,7 @@ export default function Navigator() {
               
               <li className="nav-item">
                 <a // eslint-disable-line
-                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                   href="https://www.etsy.com/shop/creepybutcutepress"
                 >
                   Shop
@@ -115,7 +115,7 @@ export default function Navigator() {
               <li className="nav-item">
               <Link href="/about">
                 <a
-                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                 >
                   About
                 </a>
@@ -125,7 +125,7 @@ export default function Navigator() {
               <li className="nav-item">
               <Link href="/contact">
                 <a
-                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                 >
                   Contact
                 </a>

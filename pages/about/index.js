@@ -1,7 +1,5 @@
-import Head from "next/head"
-import Link from 'next/link'
-import Image from 'next/image'
-import Navigator from '../../components/navigator'
+import Footer from '../../components/footer'
+
 
 export default function About() {
 
@@ -17,7 +15,7 @@ export default function About() {
 
       </div>
 
-      <div className="container mx-auto px-4 grid justify-center font-Nanum">
+      <div className="container mx-auto px-4 grid justify-center font-Nanum pb-32">
       <div className="max-w-sm w-full lg:max-w-full lg:flex justify-center">
         <div className="h-auto md:h-auto lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" >
             <img
@@ -46,6 +44,7 @@ export default function About() {
         </div>
       </div>
       </div>
+      <Footer />
     </>
   )
 }

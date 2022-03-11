@@ -20,7 +20,9 @@ module.exports = {
       'silver': '#ecebff',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
-      'zinc': '#27272a'
+      'zinc': '#27272a',
+      'black': "#000000",
+      'logo': "#13cf92"
     },
   },
   plugins: [],
