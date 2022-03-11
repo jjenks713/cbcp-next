@@ -4,6 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Navigator from '../../components/navigator'
 import matter from 'gray-matter'
+import BookModal from '../../components/bookModal'
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 
@@ -42,26 +45,26 @@ export default function Drawings(data) {
         >Artist Books</h1>
 
       </div>
-      <main className='flex flex-col justify-center items-center font-Nanum'>
+      <main className='flex flex-col justify-center items-center font-Nanum px-24'>
       <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
       {dataArray.map(data => (
-            <div className='hover:opacity-50 p-3 break-inside' key={data.id}>
-              {data.image.map(image => (
-              <img //eslint-disable-line
-              src={image}
-              alt={data.name}
-              />
-              ))}
-              <ul>
-                <li>{data.name}</li>
-                <li>{data.med}</li>
-                <li>{data.size}</li>
-                <li>{data.ed}</li>
-              </ul>
+            <div className='p-3 break-inside w-80 sm:w-96' key={data.id}>
+                <Carousel>
+                {data.image.map(image => (
+                <>
+                <img //eslint-disable-line
+                src={image}
+                alt={data.name}
+                />
+                </>
+                ))}
+                </Carousel>
+              <BookModal data={data}/>
             </div>
+            
           ))}
-
       </div>
+
 
       </main>
       <footer>
