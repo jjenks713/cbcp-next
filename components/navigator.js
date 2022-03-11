@@ -22,7 +22,7 @@ export default function Navigator() {
             <Image //eslint-disable-line
               width={1600}
               height={200}
-              src="/images/CBCP-Long-1.png" 
+              src="/images/CBCP-Lone.png" 
               alt="CREEPY BUT CUTE PRESS"
               className="hover:opacity-75 cursor-pointer text-white"
             />
