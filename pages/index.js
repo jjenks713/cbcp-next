@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { mainData }  from '../components/main-data';
+import { mainData }  from '../main-data';
 import Navigator from '../components/navigator';
 import CircularProgress from '../components/loader'
 import * as React from 'react';

@@ -1,33 +1,31 @@
-import { CarouselOne, CarouselTwo, CarouselThree, CarouselFour, CarouselFive } from "../../components/books-data"
+import booksData from "../../books-data"
 import Head from "next/head"
 import Link from 'next/link'
 import Image from 'next/image'
 import Navigator from '../../components/navigator'
+import matter from 'gray-matter'
+
 
 
 export async function getStaticProps() {
+  const bookDatas = await booksData.map((books) => {
+    const data = books
+    return data
+  });
 
-  const carouselonePhotos = CarouselOne;
-  const carouseltwoPhotos = CarouselTwo;
-  const carouselthreePhotos = CarouselThree;
-  const carouselfourPhotos = CarouselFour;
-  const carouselfivePhotos = CarouselFive;
-
+  const data = bookDatas
 
   return {
     props: {
-        carouselonePhotos,
-        carouseltwoPhotos,
-        carouselthreePhotos,
-        carouselfourPhotos,
-        carouselfivePhotos
+        data
     }
   }
 }
 
 
-export default function Drawings({carouselonePhotos, carouseltwoPhotos, carouselthreePhotos, carouselfourPhotos, carouselfivePhotos}) {
+export default function Drawings(data) {
 
+  const dataArray = data.data
 
   return (
     <>
@@ -46,100 +44,25 @@ export default function Drawings({carouselonePhotos, carouseltwoPhotos, carousel
       </div>
       <main className='flex flex-col justify-center items-center font-Nanum'>
       <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
-      {carouselonePhotos.map(carouselonePhoto => (
-            <div className='hover:opacity-50 p-3 break-inside' key={carouselonePhoto.id}>
-              <Link href={"/"}>
-              <img
-              src={carouselonePhoto.url} 
-              alt="image"
-              ></img>
-              </Link>
-
+      {dataArray.map(data => (
+            <div className='hover:opacity-50 p-3 break-inside' key={data.id}>
+              {data.image.map(image => (
+              <img //eslint-disable-line
+              src={image}
+              alt={data.name}
+              />
+              ))}
+              <ul>
+                <li>{data.name}</li>
+                <li>{data.med}</li>
+                <li>{data.size}</li>
+                <li>{data.ed}</li>
+              </ul>
             </div>
           ))}
-            Vicious Cycle
-            Screenprint on Lettra
 
-            3.5”x5” closed, 21”x5” open
-
-            Ed. 13
       </div>
-      <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
-      {carouseltwoPhotos.map(carouseltwoPhoto => (
-            <div className='hover:opacity-50 p-3 break-inside' key={carouseltwoPhoto.id}>
-              <Link href={"/"}>
-              <img
-              src={carouseltwoPhoto.url} 
-              alt="image"
-              ></img>
-              </Link>
 
-            </div>
-          ))}
-          Can You Tell
-            Risograph Print
-
-            2.25”x4.25” closed, 9”x11” Open
-
-            Ed. 25
-      </div>
-      <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
-      {carouselthreePhotos.map(carouselthreePhoto => (
-            <div className='hover:opacity-50 p-3 break-inside' key={carouselthreePhoto.id}>
-              <Link href={"/"}>
-              <img
-              src={carouselthreePhoto.url} 
-              alt="image"
-              ></img>
-              </Link>
-
-            </div>
-          ))}
-         Let Me Out
-            Letterpress and Relief on Lettra
-
-            3”x3” closed, 9”x9” open
-
-            Ed. 30
-      </div>
-      <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
-      {carouselfourPhotos.map(carouselfourPhoto => (
-            <div className='hover:opacity-50 p-3 break-inside' key={carouselfourPhoto.id}>
-              <Link href={"/"}>
-              <img
-              src={carouselfourPhoto.url} 
-              alt="image"
-              ></img>
-              </Link>
-
-            </div>
-          ))}
-         Help
-            Letterpress and Relief on Lettra
-
-            3”x3” closed, 9”x9” open
-
-            Ed. 30
-      </div>
-      <div className="p-10 masonry sm:masonry-sm md:masonry-md lg:masonry-lg">
-      {carouselfivePhotos.map(carouselfivePhoto => (
-            <div className='hover:opacity-50 p-3 break-inside' key={carouselfivePhoto.id}>
-              <Link href={"/"}>
-              <img
-              src={carouselfivePhoto.url} 
-              alt="image"
-              ></img>
-              </Link>
-
-            </div>
-          ))}
-        Welcome to College
-            Letterpress and Relief on Lettra
-
-            3”x3” closed, 9”x9” open
-
-            Ed. 30
-      </div>
       </main>
       <footer>
         <a>
