@@ -84,7 +84,7 @@ export default function Drawings(data) {
       :
       <div className='grid justify center pb-96'>    
         <Box sx={{ width: '100%' }}>
-        <LinearProgress color="success" />
+        <LinearProgress />
         </Box>
       </div>
     }
