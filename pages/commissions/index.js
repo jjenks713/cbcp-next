@@ -103,7 +103,7 @@ export default function Drawings({commissionPhotos}) {
                     key={modalPhotos[5]}
                     className="sm:bg-none"
                   >
-                    <Box sx={style} key={modalPhotos}>
+                    <Box sx={style} className='relative bg-black' key={modalPhotos}>
                     <button className='absolute right-0 top-0 pr-5 pt-2' onClick={handleClose}><i className="fa fa-window-close" style={{fontSize: '25px', color: "white"}}></i></button>
                     <a>
                       <img // eslint-disable-line
