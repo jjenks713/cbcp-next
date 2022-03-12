@@ -22,7 +22,8 @@ module.exports = {
       'bermuda': '#78dcca',
       'zinc': '#27272a',
       'black': "#000000",
-      'logo': "#13cf92"
+      'logo': "#009fa2",
+      'back-logo': "#000000ad"
     },
   },
   plugins: [],

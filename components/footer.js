@@ -7,24 +7,32 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function Footer() {
 
     return (
-        <footer className='bg-black py-6'>
-        <a
+        <footer className='bg-black py-1'>
+        <div
         className='grid justify-center'
         >
-        <Link href="/" className="cursor-pointer">
-        <Image src="/images/CBCP-Long.png" alt="logo" width={300} height={35}/>
-        </Link>
-        <ul className='flex justify-center text-logo text-center py-5'>
-          <li className='px-2'>
-          <a href="https://www.facebook.com/mary.jenkin.37"><FacebookIcon /></a>
-          </li>
-          <li className='px-2'>
-        <a href="https://www.instagram.com/creepybutcutepress/?hl=en"><InstagramIcon /></a>
-          </li>
+          <div>
+            <Link href="/" className="cursor-pointer">
+            <Image src="/images/CBCP-Long.png" alt="logo" width={600} height={100}/>
+            </Link>
+          </div>
+          <div className='grid justify-center'>
+            <ul className='flex text-logo text-center py-1'>
+              <li className='px-2'>
+              <a href="https://www.facebook.com/mary.jenkin.37"><FacebookIcon /></a>
+              </li>
+              <li className='px-2'>
+              <a href="https://www.instagram.com/creepybutcutepress/?hl=en"><InstagramIcon /></a>
+              </li>
+              <li>
+              </li>
+            </ul>
+          </div>
+          <div className='grid justify-center'>
+          <small className='text-logo text-center'><CopyrightIcon /> 2022 Creepy but Cute Press</small>
+          </div>
 
-        </ul>
-        <small className='text-logo text-center'><CopyrightIcon /> 2022 Creepy but Cute Press</small>
-        </a>
+        </div>
       </footer>
     )
 }
