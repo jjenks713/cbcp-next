@@ -52,7 +52,7 @@ export default function Navigator() {
                 <Menu.Items>
 
 
-                  <Menu.Item className="px-3 py-1 sm:py-0 flex text-sm sm:text-md items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
+                  <Menu.Item className="px-3 py-1 flex text-sm sm:text-md items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
                     {({ active }) => (
                       <a // eslint-disable-line
                         className={`${active && 'bg-blue-500'}`}
@@ -70,7 +70,7 @@ export default function Navigator() {
                     )}
                   </Menu.Item>
 
-                  <Menu.Item className="px-3 py-1 sm:py-0 flex text-sm sm:text-md items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
+                  <Menu.Item className="px-3 py-1 flex text-sm sm:text-md items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
                     {({ active }) => (
                       <a // eslint-disable-line
                         className={`${active && 'bg-blue-500'}`}
