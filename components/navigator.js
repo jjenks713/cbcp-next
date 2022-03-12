@@ -48,11 +48,11 @@ export default function Navigator() {
 
               <li className="nav-item">
               <Menu>
-                <Menu.Button className="px-3 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75 bg-gray-900">Prints&nbsp;&nbsp;<i className="fa fa-angle-down"></i></Menu.Button>
+                <Menu.Button className="px-3 flex items-center text-sm sm:text-md uppercase font-bold leading-snug text-logo hover:opacity-75 bg-gray-900">Prints&nbsp;&nbsp;<i className="fa fa-angle-down"></i></Menu.Button>
                 <Menu.Items>
 
 
-                  <Menu.Item className="px-3 flex items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
+                  <Menu.Item className="px-3 flex text-sm sm:text-md items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
                     {({ active }) => (
                       <a // eslint-disable-line
                         className={`${active && 'bg-blue-500'}`}
@@ -70,7 +70,7 @@ export default function Navigator() {
                     )}
                   </Menu.Item>
 
-                  <Menu.Item className="px-3 flex items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
+                  <Menu.Item className="px-3 flex text-sm sm:text-md items-center uppercase leading-snug text-logo hover:opacity-75 bg-gray-900">
                     {({ active }) => (
                       <a // eslint-disable-line
                         className={`${active && 'bg-blue-500'}`}
@@ -92,7 +92,7 @@ export default function Navigator() {
                 <li className="nav-item">
                   <NextLink href='/drawings'>
                     <a
-                    className="px-3 flex items-center text-sm uppercase font-bold leading-snug text-logo hover:opacity-75"
+                    className="px-3 flex items-center text-sm sm:text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                   >
                     Drawings &nbsp;<i className="fa fa-plus" style={{fontSize: '10px'}}></i>
                   </a></NextLink>
@@ -102,7 +102,7 @@ export default function Navigator() {
                 <li className="nav-item">
                 <NextLink href="/commissions">
                   <a
-                    className="px-3 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
+                    className="px-3 flex items-center text-sm sm:text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                   >
                     Commissions
                   </a>
@@ -111,7 +111,7 @@ export default function Navigator() {
                 
                 <li className="nav-item">
                   <a // eslint-disable-line
-                    className="px-3 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
+                    className="px-3 flex items-center text-sm sm:text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                     href="https://www.etsy.com/shop/creepybutcutepress"
                     target="_blank"
                   >
@@ -122,7 +122,7 @@ export default function Navigator() {
                 <li className="nav-item">
                 <NextLink href="/about">
                   <a
-                    className="px-3 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
+                    className="px-3 flex items-center text-sm sm:text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                   >
                     About
                   </a>
@@ -132,7 +132,7 @@ export default function Navigator() {
                 <li className="nav-item">
                 <NextLink href="/contact">
                   <a
-                    className="px-3 flex items-center text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
+                    className="px-3 flex items-center text-sm sm:text-md uppercase font-bold leading-snug text-logo hover:opacity-75"
                   >
                     Contact
                   </a>
