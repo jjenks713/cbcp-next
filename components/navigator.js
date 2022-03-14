@@ -44,7 +44,7 @@ export default function Navigator() {
               <div  
               className={
                 "lg:flex flex-wrap text-center justify-center" +
-                (navbarOpen ? " flex" : " hidden absolute bottom-4 lg:bottom-4 left-1/2 transform -translate-x-1/2 bg-black")
+                (navbarOpen ? " flex bg-back-logo" : " hidden absolute bottom-4 lg:bottom-4 left-1/2 transform -translate-x-1/2 bg-black")
               }
               >
               <ul className="flex flex-wrap lg:flex-nowrap pb-6 lg:pb-0 list-none lg:ml-auto md:text-sm justify-center"
