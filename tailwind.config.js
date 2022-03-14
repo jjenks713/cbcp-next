@@ -23,7 +23,7 @@ module.exports = {
       'zinc': '#27272a',
       'black': "#000000",
       'logo': "#009fa2",
-      'back-logo': "#000000ad"
+      'back-logo': "#000000d4"
     },
   },
   plugins: [],

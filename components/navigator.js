@@ -14,17 +14,22 @@ export default function Navigator() {
     <Head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </Head>
-      <nav className="relative flex flex-wrap items-center justify-between bg-black mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between mb-3" 
+      style={{
+        backgroundImage: "url('/images/confet.png')",
+        backgroundSize: "cover"
+      }}
+      >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-center">
           <div className="w-full relative flex flex-wrap justify-center lg:w-auto lg:static lg:block lg:justify-start">
             <NextLink href="/"//eslint-disable-line            
             > 
             <Image //eslint-disable-line
-              width={2400}
-              height={452}
-              src="/images/CBCP-Long.png" 
+              width={4089}
+              height={656}
+              src="/images/logo-trans.png" 
               alt="CREEPY BUT CUTE PRESS"
-              className="hover:opacity-75 cursor-pointer pb-4"
+              className="hover:opacity-75 cursor-pointer pb-6"
             />
             </NextLink>
             <button
@@ -39,7 +44,7 @@ export default function Navigator() {
               <div  
               className={
                 "lg:flex flex-wrap text-center justify-center" +
-                (navbarOpen ? " flex" : " hidden absolute bottom-4 lg:bottom-4 left-1/2 transform -translate-x-1/2 bg-back-logo")
+                (navbarOpen ? " flex" : " hidden absolute bottom-4 lg:bottom-4 left-1/2 transform -translate-x-1/2 bg-black")
               }
               >
               <ul className="flex flex-wrap lg:flex-nowrap pb-6 lg:pb-0 list-none lg:ml-auto md:text-sm justify-center"
