@@ -7,13 +7,18 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function Footer() {
 
     return (
-        <footer className='bg-black py-1'>
+        <footer className='bg-black py-1'
+        style={{
+          backgroundImage: "url('/images/confet.png')",
+          backgroundSize: "cover"
+        }}
+        >
         <div
         className='grid justify-center'
         >
           <div>
             <Link href="/" className="cursor-pointer">
-            <Image src="/images/CBCP-Long.png" alt="logo" width={600} height={100}/>
+            <Image src="/images/logo-trans.png" alt="logo" width={600} height={100}/>
             </Link>
           </div>
           <div className='grid justify-center'>

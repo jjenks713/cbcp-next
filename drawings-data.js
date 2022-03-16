@@ -13,13 +13,13 @@ export const drawingsData = [
         size: '8”x10”',
         val: '2'
     },
-    {
+/*     {
         url: '/images/Depression.gif',
         name: 'Depression',
         med: 'Digital Gif',
         size: '',
         val: '3'
-    },
+    }, */
     {
         url: '/images/Drift.jpg',
         name: 'Drift',
@@ -97,7 +97,7 @@ export const drawingsData = [
         size: '',
         val: "15"
     },
-    {
+/*     {
         url: '/images/optimism.gif',
         name: 'Optimism',
         med: 'Digital GIF',
@@ -110,7 +110,7 @@ export const drawingsData = [
         med: 'Digital GIF',
         size: '',
         val: "17"
-    },
+    }, */
     {
         url: '/images/girl-2.jpg',
         name: 'Girl 2',
@@ -187,7 +187,6 @@ export const drawingsData = [
         med: 'Sanded Acrylic and Charcoal',
         size: '12”x36”',
         val: "28",
-        height: "h-96"
     },
     {
         url: '/images/tied-up.jpg',
