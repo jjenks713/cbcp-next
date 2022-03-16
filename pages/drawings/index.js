@@ -102,16 +102,17 @@ export default function Drawings({drawingsPhotos}) {
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                     key={modalPhotos[4]}
+                    classeName="max-h-screen"
                   >
                     <Box sx={style}
                     key={modalPhotos}
-                    className="bg-black"
+                    className="bg-black max-h-screen"
                     >
                 <button className='absolute right-0 top-0 pr-5 pt-2' onClick={handleClose}><i className="fa fa-window-close" style={{fontSize: '25px', color: "white"}}></i></button>
 
                     <a>
                       <img // eslint-disable-line
-                      className='p-5 rounded-sm'
+                      className='p-5 rounded-sm max-h-fit'
                       src={modalPhotos[3]} 
                       alt="image"
                       />
@@ -127,7 +128,6 @@ export default function Drawings({drawingsPhotos}) {
                   </Modal>
             </div>
           ))}
-
       </div>
       </main>
       <Footer />

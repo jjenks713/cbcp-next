@@ -186,7 +186,8 @@ export const drawingsData = [
         name: 'Slithery Little Snake',
         med: 'Sanded Acrylic and Charcoal',
         size: '12”x36”',
-        val: "28"
+        val: "28",
+        height: "h-96"
     },
     {
         url: '/images/tied-up.jpg',

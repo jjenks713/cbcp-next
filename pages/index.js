@@ -98,7 +98,7 @@ export default function Home({mainPhotos}) {
                           <Box className='relative bg-black' sx={style} key={modalPhotos}>
                             <button className='absolute right-0 top-0 pr-5 pt-2' onClick={handleClose}><i className="fa fa-window-close" style={{fontSize: '25px', color: "white"}}></i></button>
                           <a>
-                            <img className='p-5 rounded-sm'// eslint-disable-line
+                            <img className='p-5 rounded-sm h-full'// eslint-disable-line
                             src={modalPhotos[4]} 
                             alt="image"
                             />
