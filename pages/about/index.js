@@ -37,7 +37,7 @@ export default function About() {
             </p>
           </div>
           <div className="flex items-center">
-            <img className="w-10 h-10 rounded-1 mr-4" src="/images/fav.png" alt="CBCP" />
+            <img className="w-10 h-10 rounded-1 mr-4" src="/images/fav.PNG" alt="CBCP" />
             <div className="text-sm">
               <p className="text-gray-900 leading-none">Mary Jenkin</p>
               <p className="text-gray-600">
